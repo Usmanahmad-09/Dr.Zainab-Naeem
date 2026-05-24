@@ -143,6 +143,31 @@ section{padding:110px 5vw}
 .sc h3{font-size:.9rem;font-weight:700;margin-bottom:.45rem;color:var(--text)}
 .sc p{font-size:.79rem;color:var(--muted);line-height:1.72}
 
+  /* RESEARCH INTERESTS */
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.interest-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  color: var(--muted);
+  transition: 0.3s;
+}
+
+.interest-item:hover {
+  background: var(--al);
+  border-color: var(--am);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
 /* CONTACT */
 #contact{background:var(--bg);transition:background .3s}
 .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
@@ -236,18 +261,39 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
   <div class="blob b2"></div>
   <div class="hi">
     <div class="fi">
-      <div class="pill"><span class="dot"></span>Research Scholar &amp; Academic Writer</div>
+     <div class="pill"><span class="dot"></span>Research Scholar, Academic Writer &amp; Content Strategist</div>
       <h1 class="h1">Hi, I&#39;m<br><em>Zainab</em></h1>
       <div class="role" id="roleText">Research Assistant (RA)</div>
-      <p class="bio">Food Science researcher, academic writer, and content strategist dedicated to delivering rigorous research, expert consultation, and clear, impactful communication.</p>
+      <p class="bio">Food Science researcher, academic writer, and content strategist dedicated to delivering evidence-based research, professional consultation, and impactful communication across academic and digital platforms.</p>
       <div class="hbtns">
         <a href="#contact" class="bp">Work With Me</a>
         <a href="#services" class="bs">View Services</a>
       </div>
       <div class="stats">
-        <div><div class="snum">6+</div><div class="slbl">Years Experience</div></div>
-        <div><div class="snum">3</div><div class="slbl">Degrees</div></div>
-        <div><div class="snum">15+</div><div class="slbl">Services Offered</div></div>
+  <div>
+  <div class="snum">250+</div>
+  <div class="slbl">Projects Completed</div>
+</div>
+
+<div>
+  <div class="snum">10+</div>
+  <div class="slbl">Countries Served</div>
+</div>
+
+<div>
+  <div class="snum">6+</div>
+  <div class="slbl">Years Freelance Experience</div>
+</div>
+
+<div>
+  <div class="snum">Multi</div>
+  <div class="slbl">Disciplinary Academic Support</div>
+</div>
+
+<div>
+  <div class="snum">Expert</div>
+  <div class="slbl">Research-Focused Writing</div>
+</div>
       </div>
     </div>
     <div class="hw fi">
@@ -269,9 +315,9 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
         <div class="stag">About Me</div>
         <h2 class="stit">The Scholar Behind<br>the <em>Research</em></h2>
         <div class="sline"></div>
-        <p>With a robust background as a Research Scholar in Food Science, I am adept at uncovering insights that shape the future of research. My skills as a research writer enable me to contribute meaningfully to academic and public understanding.</p>
-        <p>I am dedicated to delivering rigorous research, expert consultation, and clear, impactful communication. My multidisciplinary education across food science, psychology, and nutrition gives me a uniquely holistic perspective.</p>
-        <p>As the founder of Writing Ace Agency, I bring 6+ years of freelance writing experience across dozens of niches, from academic research to creative storytelling, with clients in Pakistan, UK, USA, Australia, and beyond.</p>
+        <p>With a strong academic background in Food Science and Human Nutrition, I specialize in producing research-driven insights that contribute to academic and professional advancement. My expertise in research writing enables me to communicate complex ideas with clarity, accuracy, and academic integrity.</p>
+        <p> I am committed to delivering high-quality research, professional consultation, and clear, impactful communication tailored to diverse audiences.</p>
+        <p> My multidisciplinary academic background in food science, nutrition, and psychology allows me to approach research with a comprehensive and interdisciplinary perspective.</p>
         <div class="chips">
           <span class="chip">Academic Writing</span><span class="chip">Research Excellence</span>
           <span class="chip">SEO Mastery</span><span class="chip">Data Analysis</span>
@@ -293,7 +339,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
         <div class="ic">
           <div class="icl">Founder</div>
           <div class="icv">Writing Ace Agency</div>
-          <div class="ics">Professional research, academic writing &amp; content services &middot; Est. 2024</div>
+         <div class="ics">Research, academic writing, and strategic content services for students, researchers, and businesses &middot; Established 2024</div>
         </div>
         <div class="ic">
           <div class="icl">Languages</div>
@@ -362,8 +408,8 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
           <div class="eco">Fiverr &amp; Upwork · Remote</div>
           <ul class="eul">
             <li>6+ years of freelance writing experience across Fiverr and Upwork platforms.</li>
-            <li>Covered niches: travel, parenting, technology, digital marketing, health, law, business, and academic writing.</li>
-            <li>Selected as the only Pakistani female writer for long-term work with an Australian client.</li>
+            <li>Produced content across diverse niches including technology, health, business, law, travel, parenting, digital marketing, and academic research.</li>
+            <li>Selected for long-term international collaborations based on writing quality, consistency, and client satisfaction.</li>
           </ul>
         </div>
       </div>
@@ -373,8 +419,8 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
           <div class="etit">Ghostwriter &amp; SEO Writer</div>
           <div class="eco">Offroadcare.com · Remote</div>
           <ul class="eul">
-            <li>Ghostwritten blogs on ATVs, UTVs, SUVs, off-roading vehicles, technology, and automobiles.</li>
-            <li>Implemented effective SEO strategies to improve content ranking and search engine visibility.</li>
+            <li>Ghostwrote SEO-optimized blogs focused on off-road vehicles, automotive technology, and outdoor mobility trends.</li>
+            <li>Applied SEO best practices to improve search visibility, audience engagement, and content performance.</li>
           </ul>
         </div>
       </div>
@@ -384,7 +430,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
           <div class="etit">Short Story Writer</div>
           <div class="eco">Horror &amp; Crime Niche · Freelance</div>
           <ul class="eul">
-            <li>Wrote short stories in Horror and Crime genres for international clients.</li>
+            <li> Developed original short fiction content in horror and crime genres for international clients.</li>
             <li>Selected as the only Pakistani female writer for long-term collaboration with an Australian client on a freelancing marketplace.</li>
           </ul>
         </div>
@@ -395,7 +441,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
           <div class="etit">YouTube Script Writer</div>
           <div class="eco">AMOL UJAGARE Channel · Remote</div>
           <ul class="eul">
-            <li>Formulated scripts on office management skills and work-life balance topics for a famous YouTube channel.</li>
+            <li>Developed engaging YouTube scripts focused on office management, productivity, and work-life balance topics.</li>
           </ul>
         </div>
       </div>
@@ -522,6 +568,30 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
       </div>
 
     </div>
+  </div>
+</section>
+  <section id="research-interests" class="section">
+  <div class="container">
+
+    <h2 class="section-title">Research Interests</h2>
+
+    <div class="interests-grid">
+
+      <div class="interest-item">Food Science & Human Nutrition</div>
+      <div class="interest-item">Public Health & Wellness</div>
+      <div class="interest-item">Nutritional Psychology</div>
+      <div class="interest-item">Consumer Food Behavior</div>
+      <div class="interest-item">Academic Research Methodology</div>
+      <div class="interest-item">Health Communication</div>
+      <div class="interest-item">Evidence-Based Nutrition</div>
+      <div class="interest-item">Media and Marketing</div>
+      <div class="interest-item">Engineering Domain</div>
+      <div class="interest-item">Business Administration</div>
+      <div class="interest-item">Social Sciences</div>
+      <div class="interest-item">Literature and Languages</div>
+
+    </div>
+
   </div>
 </section>
 
