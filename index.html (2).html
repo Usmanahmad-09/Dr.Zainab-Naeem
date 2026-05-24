@@ -575,15 +575,15 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
         <div class="cdet"><div class="ci">&#x1F916;</div><a href="https://www.instagram.com/bypassai_bywritingaceagency" target="_blank">@bypassai_bywritingaceagency</a></div>
       </div>
       <div class="fi">
-        <div class="cform">
+        <form class="cform" action="https://formspree.io/f/xbdbkwov" method="POST">
           <div class="crow">
-            <div class="cg"><label>Full Name *</label><input type="text" id="fn" placeholder="Your name" required/></div>
-            <div class="cg"><label>Email *</label><input type="email" id="fe" placeholder="your@email.com" required/></div>
+            <div class="cg"><label>Full Name *<input type="text" id="fn" name="name" placeholder="Your name" required/></div>
+            <div class="cg"><label>Email *</label><input type="email" id="fe" name="email" placeholder="your@email.com" required/></div>
           </div>
           <div class="crow">
-            <div class="cg"><label>Phone</label><input type="tel" id="fp" placeholder="+92 xxx xxxxxxx"/></div>
+            <div class="cg"><label>Phone</label><input type="tel" id="fp" name="phone" placeholder="+92 xxx xxxxxxx"/></div>
             <div class="cg"><label>Service Needed</label>
-              <select id="fs">
+             <select id="fs" name="service">
                 <option value="">Select a service...</option>
                 <option>Research Assistance</option>
                 <option>Research Paper Publication</option>
@@ -602,9 +602,9 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
               </select>
             </div>
           </div>
-          <div class="cg"><label>Message *</label><textarea rows="5" id="fm" placeholder="Tell me about your project or research needs..." required></textarea></div>
+          <div class="cg"><label>Message *</label><textarea rows="5" id="fm" name="message" placeholder="Tell me about your project or research needs..." required></textarea></div>
           <div class="fmsg" id="fmsg"></div>
-          <button class="csend" id="sbtn" onclick="sendMsg()">
+          <button type="submit" class="csend" id="sbtn">
             <span id="btxt">Send Message &#8594;</span>
             <span id="bload" style="display:none">Sending&#8230;</span>
           </button>
@@ -612,6 +612,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:3rem
         </div>
       </div>
     </div>
+  </form>
   </div>
 </section>
 
